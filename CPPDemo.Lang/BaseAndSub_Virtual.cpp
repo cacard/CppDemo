@@ -1,7 +1,7 @@
 /*
-*   Ðéº¯Êý
-*
-*/
+ *   Virtual Method
+ *
+ */
 
 #include <iostream>
 using namespace std;
@@ -11,11 +11,13 @@ class Base
 private:
     int age;
     char * name;
+
 public:
     Base()
     {
         cout << "Base's ctor()" << endl;
     }
+
     ~Base()
     {
         cout << "Base's ~" << endl;
@@ -34,6 +36,7 @@ public:
     {
         cout << "Sub's ctor" << endl;
     }
+
     ~Sub()
     {
         cout << "Sub's ~" << endl;

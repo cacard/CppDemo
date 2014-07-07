@@ -1,7 +1,7 @@
 /*
  *  Lvalue / Rvalue / Rvalue reference
  *
- *  TODO 右值引用不支持
+ *  let CodeBlocks supported C++11:download the last TDM-GCC，note that check out the option for compalier for support C++11.
  */
 
  #include <iostream>
@@ -9,13 +9,12 @@
 
  int MethodReturnRValue()
  {
-     int temp = 1;
-     cout << "temp's address:" << &temp;
+     int temp = 10;
      return temp;
  }
 
 
- int main()
+ int main90()
  {
      // 普通引用
      int a=1;
@@ -36,9 +35,13 @@
      cout << rd <<",and rd's address is " << &rd << endl;
 
      // 右值引用
-     int && rr = MethodReturnRValue();
-     cout << rr << endl;
-
+     cout << "rvalue reference:" << endl;
+     int &&rr1 = 1;
+     cout << rr1 << endl;
+     int&& rr2 = MethodReturnRValue();
+     cout << rr2 << endl;
+     rr2 = std::move(rr1); // 使用 std::move()
+     cout << rr2 << endl;
 
      return 0;
  }

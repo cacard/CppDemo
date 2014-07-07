@@ -16,7 +16,10 @@
  public:
     Person(const char* name,int age);
     //Person(const Person& _p);
-    ~Person();
+    ~Person()
+    {
+        delete[] name;
+    }
  };
 
 // 使用 C Style 字符串实现构造函数
@@ -37,11 +40,6 @@ Person::Person(const Person& _p)
 }
 */
 
-// 析构函数
-Person::~Person()
-{
-    delete[] name;
-}
 
 
 int main666()

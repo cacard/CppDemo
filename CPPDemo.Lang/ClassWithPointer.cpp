@@ -1,5 +1,5 @@
 /*
- *  [TODO]  char * ЕФЬиЪтад
+ *  [TODO]  char *
  *
  */
 
