@@ -1,0 +1,7 @@
+Thumbs.db
+ehthumbs.db
+*.o
+*.exe
+*.cbp
+*.depend
+*.layout
