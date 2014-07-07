@@ -1,0 +1,17 @@
+/*
+ *  Copy and Swap œ∞”Ô
+ */
+
+#include <iostream>
+using namespace std;
+
+class Class33
+{
+public:
+    Class33()
+    {
+        
+    }
+    
+    operator = (const Class33)
+};
