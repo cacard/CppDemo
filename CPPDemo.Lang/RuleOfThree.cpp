@@ -22,7 +22,7 @@
     }
  };
 
-// Ê¹ÓÃ C Style ×Ö·û´®ÊµÏÖ¹¹Ôìº¯Êı
+// ä½¿ç”¨ C Style å­—ç¬¦ä¸²å®ç°æ„é€ å‡½æ•°
 Person::Person(const char * p_name,int age)
 {
     name = new char[strlen(p_name)+1];
@@ -30,7 +30,7 @@ Person::Person(const char * p_name,int age)
     this->age = age;
 }
 
-// ¿½±´¹¹Ôìº¯Êı
+// æ‹·è´æ„é€ å‡½æ•°
 /*
 Person::Person(const Person& _p)
 {

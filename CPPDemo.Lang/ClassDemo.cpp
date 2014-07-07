@@ -14,7 +14,7 @@ private:
     int age;
     const int constAge=0;
     char * name;
-    static int staticValue; // ¾²Ì¬±äÁ¿
+    static int staticValue; // é™æ€å˜é‡
 
 /* ctor */
 public:
@@ -24,7 +24,7 @@ public:
         this->age=-1;
         name="no name";
     }
-    ClassOne(int v):age(v),constAge(-3) // ¹¹Ôìº¯ÊıµÄ¡°³ÉÔ±³õÊ¼»¯ÁĞ±í¡±
+    ClassOne(int v):age(v),constAge(-3) // æ„é€ å‡½æ•°çš„â€œæˆå‘˜åˆå§‹åŒ–åˆ—è¡¨â€
     {
     }
 
@@ -55,7 +55,7 @@ public:
         printf("name:%s\r\n",this->name);
     }
 
-    // º¯ÊıÉùÃ÷£¬ÔÚÍâ²¿ÊµÏÖ
+    // å‡½æ•°å£°æ˜ï¼Œåœ¨å¤–éƒ¨å®ç°
     void SayHelloAgain();
 
     void SetStaticValue(int value)
@@ -67,20 +67,20 @@ public:
         printf("static value:%d\r\n",staticValue);
     }
 
-    // ¾²Ì¬º¯Êı
+    // é™æ€å‡½æ•°
     void static StaticMethod()
     {
         printf("this is static method,staticValue=%d\r\n",staticValue);
     }
 };
 
-// ÔÚclassÍâ²¿¶¨Òåmethod£¨±ØĞëÔÚÀàÄÚ²¿ÉùÃ÷¸Ã·½·¨£©
+// åœ¨classå¤–éƒ¨å®šä¹‰methodï¼ˆå¿…é¡»åœ¨ç±»å†…éƒ¨å£°æ˜è¯¥æ–¹æ³•ï¼‰
 void ClassOne::SayHelloAgain()
 {
     printf("hello again.\r\n");
 }
 
-// ¾²Ì¬±äÁ¿µÄ³õÊ¼»¯
+// é™æ€å˜é‡çš„åˆå§‹åŒ–
 int ClassOne::staticValue=0;
 
 
@@ -88,9 +88,9 @@ int ClassOne::staticValue=0;
 
 void test1()
 {
-    ClassOne * classOne = new ClassOne(); // ´´½¨Àà
-    (*classOne).SayHello(); // ·½·¨µ÷ÓÃ1
-    classOne->SayHello(); //·½·¨µ÷ÓÃ2
+    ClassOne * classOne = new ClassOne(); // åˆ›å»ºç±»
+    (*classOne).SayHello(); // æ–¹æ³•è°ƒç”¨1
+    classOne->SayHello(); //æ–¹æ³•è°ƒç”¨2
 
     classOne->SetAge(1);
     int age = classOne->GetAge();
@@ -120,7 +120,7 @@ void test2()
 
 }
 
-/* ²âÊÔ */
+/* æµ‹è¯• */
 int main_0()
 {
     test2();

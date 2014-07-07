@@ -1,7 +1,7 @@
 /*
- *  explicit ��ֹ��ʽ����ת��
+ *  explicit 防止隐式类型转换
  *
- *  �����ʹ�øùؼ��֣��Դﵽ������ʽת����Ŀ�ġ�
+ *  建议均使用该关键字，以达到必须显式转换的目的。
  */
 
  #include <iostream>
@@ -34,7 +34,7 @@
      ClassDemo classDemo;
      string name="jack";
 
-     classDemo.MethodNeedClassDemo(name); /* ԭ������Ҫ���� ClassDemo ���ͣ����Ҵ��ݽ�ȥ��һ��string�����ҵ��óɹ���
-                                             ����ΪClassDemo�и�����string�Ĺ��캯���������ɴ˹��캯������ʽ��ת�������͡� */
+     classDemo.MethodNeedClassDemo(name); /* 原函数需要的是 ClassDemo 类型，但我传递进去了一个string，而且调用成功。
+                                             是因为ClassDemo有个基于string的构造函数，可以由此构造函数“隐式”转换成类型。 */
 
  }

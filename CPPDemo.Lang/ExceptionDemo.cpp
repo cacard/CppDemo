@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-// ¸Ãº¯Êı¿ÉÄÜÅ×Òì³£²¢´øÓĞÉùÃ÷
+// è¯¥å‡½æ•°å¯èƒ½æŠ›å¼‚å¸¸å¹¶å¸¦æœ‰å£°æ˜
 void methodMayException() throw (char *,int)
 {
     throw 1;

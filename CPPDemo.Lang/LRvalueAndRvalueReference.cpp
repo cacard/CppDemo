@@ -1,7 +1,7 @@
-/*
+ï»¿/*
  *  Lvalue / Rvalue / Rvalue reference
  *
- *  let CodeBlocks supported C++11:download the last TDM-GCC£¬note that check out the option for compalier for support C++11.
+ *  let CodeBlocks supported C++11:download the last TDM-GCCï¼Œnote that check out the option for compalier for support C++11.
  */
 
  #include <iostream>
@@ -16,31 +16,31 @@
 
  int main90()
  {
-     // ÆÕÍ¨ÒıÓÃ
+     // æ™®é€šå¼•ç”¨
      int a=1;
-     int& ra = a; // ra ÊÇ a µÄÒıÓÃ£¬È¡µØÖ·ÊÇÏàÍ¬µÄ
+     int& ra = a; // ra æ˜¯ a çš„å¼•ç”¨ï¼Œå–åœ°å€æ˜¯ç›¸åŒçš„
      cout << "a's address:" << &a << ", and ra's address:" << &ra << endl;
      ra=2;
      cout << a << endl;
 
-     // const ÒıÓÃ
+     // const å¼•ç”¨
      const int b=1;
      const int& rb = b;
-     cout << rb << endl; // const ÒıÓÃÖ»¶Á
+     cout << rb << endl; // const å¼•ç”¨åªè¯»
 
-     const int& rc = 2; // constÒıÓÃ»¹¿ÉÒÔÖ±½Ó³õÊ¼»¯µ½´¿ÓÒÖµÉÏ
+     const int& rc = 2; // constå¼•ç”¨è¿˜å¯ä»¥ç›´æ¥åˆå§‹åŒ–åˆ°çº¯å³å€¼ä¸Š
      cout << rc << endl;
 
-     const int& rd = MethodReturnRValue(); // constÒıÓÃ»¹¿ÉÒÔ°ó¶¨µ½Ò»¸öº¯Êı·µ»ØµÄÓÒÖµÉÏ
+     const int& rd = MethodReturnRValue(); // constå¼•ç”¨è¿˜å¯ä»¥ç»‘å®šåˆ°ä¸€ä¸ªå‡½æ•°è¿”å›çš„å³å€¼ä¸Š
      cout << rd <<",and rd's address is " << &rd << endl;
 
-     // ÓÒÖµÒıÓÃ
+     // å³å€¼å¼•ç”¨
      cout << "rvalue reference:" << endl;
      int &&rr1 = 1;
      cout << rr1 << endl;
      int&& rr2 = MethodReturnRValue();
      cout << rr2 << endl;
-     rr2 = std::move(rr1); // Ê¹ÓÃ std::move()
+     rr2 = std::move(rr1); // ä½¿ç”¨ std::move()
      cout << rr2 << endl;
 
      return 0;

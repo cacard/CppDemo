@@ -1,8 +1,8 @@
 /*
- *  ctor ���� ctor
+ *  ctor 调用 ctor
  *
- *  #1 ��ʹ�����Ƴ�ʼ���б�����ʽ ClassX():ClassX(...)�����治�ܸ���Ա��ʼ���б�
- *  #2 �ڹ��캯���ڲ�ʹ�� new (this)ClassX(...)
+ *  #1 可使用类似初始化列表的形式 ClassX():ClassX(...)，后面不能跟成员初始化列表
+ *  #2 在构造函数内部使用 new (this)ClassX(...)
  */
 
 #include <iostream>
@@ -14,7 +14,7 @@
     int b;
 
  public:
-     /* ����#1 */
+     /* 方法#1 */
     X():X(3)
     {
         std::cout << "ctor(),a="<< a << std::endl;
@@ -27,14 +27,14 @@
     }
 
     /*
-    ���ֵ��÷�ʽ�ǲ���ȷ�ġ�
+    这种调用方式是不正确的。
     X()
     {
         X(11);
     }
     */
 
-    /* ����#2 */
+    /* 方法#2 */
     /*
     X()
     {

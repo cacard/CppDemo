@@ -7,24 +7,24 @@
 
 void testString()
 {
-    std::string str0("abc"); // Ö±½Ó³õÊ¼»¯
-    std::string str1 = "abc"; // ¿½±´³õÊ¼»¯
+    std::string str0("abc"); // ç›´æ¥åˆå§‹åŒ–
+    std::string str1 = "abc"; // æ‹·è´åˆå§‹åŒ–
 
-    // Ë÷Òıµü´ú
+    // ç´¢å¼•è¿­ä»£
     for(int i=0;i<str0.length();i++)
     {
         std::cout << str0[i] << std::endl;
     }
 
-    // µü´úÆ÷µü´ú
+    // è¿­ä»£å™¨è¿­ä»£
     for(std::string::iterator iter = str0.begin();iter!=str0.end();iter++)
     {
         std::cout << *iter << std::endl;
     }
 
-    // for µü´ú (C++ 11)
+    // for è¿­ä»£ (C++ 11)
     /*
-    for(std::string s : str0) // auto s& ÈôÊ¹ÓÃÒıÓÃÀàĞÍ£¬Ôò¿ÉÖ±½ÓĞŞ¸Ä×Ö·û´®¡£
+    for(std::string s : str0) // auto s& è‹¥ä½¿ç”¨å¼•ç”¨ç±»å‹ï¼Œåˆ™å¯ç›´æ¥ä¿®æ”¹å­—ç¬¦ä¸²ã€‚
     {
         std::cout << s << std::endl;
     }

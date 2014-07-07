@@ -1,8 +1,8 @@
 /*
- *  ÖØÔØ
+ *  é‡è½½
  *
- *  ×¢ÒâconstÖØÔØ
- *      const¿É·ÖÎª top-level£¨Ö¸Ïò¶ÔÏó±¾Éí£©/low-level£¨Ö¸Ïò¶ÔÏóµÄÒýÓÃ£©¡£
+ *  æ³¨æ„consté‡è½½
+ *      constå¯åˆ†ä¸º top-levelï¼ˆæŒ‡å‘å¯¹è±¡æœ¬èº«ï¼‰/low-levelï¼ˆæŒ‡å‘å¯¹è±¡çš„å¼•ç”¨ï¼‰ã€‚
  *
  */
 
@@ -11,15 +11,15 @@
 
  class Y{};
 
- /* ÏÂÃæÁ½¸öº¯Êý¾ßÓÐÏàÍ¬ÓïÒå£¬¼´a¾ùÊÇÖµ¿½±´£¬ÎÞ·¨¸Ä±äÊµ²Î¡£ */
+ /* ä¸‹é¢ä¸¤ä¸ªå‡½æ•°å…·æœ‰ç›¸åŒè¯­ä¹‰ï¼Œå³aå‡æ˜¯å€¼æ‹·è´ï¼Œæ— æ³•æ”¹å˜å®žå‚ã€‚ */
  void Method1(int a){}
  //void Method1(const int a){} // error:redefinition
 
-  /* Í¬ÑùµÄÓïÒå£¬¶ÔÏó¿½±´ */
+  /* åŒæ ·çš„è¯­ä¹‰ï¼Œå¯¹è±¡æ‹·è´ */
  void Method2(Y y){}
  //void Method2(const Y y){} // error:redefinition
 
- /* ÏÂÃæÁ½¸öº¯Êý¾ßÓÐ²»Í¬ÓïÒå£¬¼´ºóÕßÎÞ·¨¸Ä±äÊµ²Î£¬Ö®ËùÒÔÊ¹ÓÃÒýÓÃ£¬¿ÉÄÜÊÇÒòÎª²»Ïë¿½±´£¬½ÚÊ¡ÄÚ´æ¡£ */
+ /* ä¸‹é¢ä¸¤ä¸ªå‡½æ•°å…·æœ‰ä¸åŒè¯­ä¹‰ï¼Œå³åŽè€…æ— æ³•æ”¹å˜å®žå‚ï¼Œä¹‹æ‰€ä»¥ä½¿ç”¨å¼•ç”¨ï¼Œå¯èƒ½æ˜¯å› ä¸ºä¸æƒ³æ‹·è´ï¼ŒèŠ‚çœå†…å­˜ã€‚ */
  void Method3(int& a){}
  void Method3(const int& a){}
 

@@ -1,8 +1,8 @@
 /*
- *   ¸³Öµ²Ù×÷·û
+ *   èµ‹å€¼æ“ä½œç¬¦
  *
- *   ÊôÓÚ¸´ÖÆ¿ØÖÆ
- *   Ä¬ÈÏÇé¿öÏÂ»áÉú³ÉÒ»¸ö£¬±íÊ¾¶Ô¶ÔÏóµÄÄÚ´æ¿½±´¡ª¡ª¼´£¬ÖµÀàÐÍÔÚStatckÉÏ¸´ÖÆ£¨Òþº¬µÄÒâË¼ÊÇ£¬Ö¸Õë³ÉÔ±Ö¸ÏòHeapÖÐµÄÍ¬Ò»¸ö¶ÔÏó£©¡£
+ *   å±žäºŽå¤åˆ¶æŽ§åˆ¶
+ *   é»˜è®¤æƒ…å†µä¸‹ä¼šç”Ÿæˆä¸€ä¸ªï¼Œè¡¨ç¤ºå¯¹å¯¹è±¡çš„å†…å­˜æ‹·è´â€”â€”å³ï¼Œå€¼ç±»åž‹åœ¨Statckä¸Šå¤åˆ¶ï¼ˆéšå«çš„æ„æ€æ˜¯ï¼ŒæŒ‡é’ˆæˆå‘˜æŒ‡å‘Heapä¸­çš„åŒä¸€ä¸ªå¯¹è±¡ï¼‰ã€‚
  *
  */
 
@@ -17,16 +17,16 @@ public:
 public:
     Z(){}
 
-    Z&/*Ò²¿ÉÒÔÊÇvoid£¬Ö»ÊÇ²»Ö§³Öa=b=c*/ operator =(const Z& _z)
+    Z&/*ä¹Ÿå¯ä»¥æ˜¯voidï¼Œåªæ˜¯ä¸æ”¯æŒa=b=c*/ operator =(const Z& _z)
     {
         cout << "-> operator = ()" << endl;
-        if(this==&_z) // Èç¹ûÊÇ×ÔÉí£¬Á¢¼´·µ»Ø
+        if(this==&_z) // å¦‚æžœæ˜¯è‡ªèº«ï¼Œç«‹å³è¿”å›ž
         {
             cout << "copy your self" << endl;
             return *this;
         }
 
-        this->a=_z.a+1; //¸´ÖÆÊ±£¬a++
+        this->a=_z.a+1; //å¤åˆ¶æ—¶ï¼Œa++
         return *this;
     }
 
@@ -49,10 +49,10 @@ int main20()
     Z zz;
     zz = z;
 
-    /* ÕâÖÖÐ´·¨ÊÇÍ¨¹ý¿½±´¹¹Ôìº¯Êý½øÐÐ¸´ÖÆµÄ£¬¶ø²»ÊÇÍ¨¹ý¸³Öµ²Ù×÷·û¡£*/
+    /* è¿™ç§å†™æ³•æ˜¯é€šè¿‡æ‹·è´æž„é€ å‡½æ•°è¿›è¡Œå¤åˆ¶çš„ï¼Œè€Œä¸æ˜¯é€šè¿‡èµ‹å€¼æ“ä½œç¬¦ã€‚*/
     /*
     Z z;
-    Z zz = z; // µÈ¼ÛÓÚ Z zz(z);
+    Z zz = z; // ç­‰ä»·äºŽ Z zz(z);
     */
 
     cout << &z << "," << & zz << endl; // 0x28fefc,0x28fef8

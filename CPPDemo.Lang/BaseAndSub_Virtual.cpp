@@ -57,7 +57,7 @@ int main_3()
     cout << "--------" << endl;
 
     Base base2;
-    Sub sub2; // ÏÈµ÷ÓÃ base's ctor£¬ÔÙµ÷ÓÃ×Ô¼ºµÄctor
+    Sub sub2; // å…ˆè°ƒç”¨ base's ctorï¼Œå†è°ƒç”¨è‡ªå·±çš„ctor
 
     base2=sub2;
     base2.Hello();
