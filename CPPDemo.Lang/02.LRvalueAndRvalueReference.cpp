@@ -1,7 +1,7 @@
 ﻿/*
  *  Lvalue / Rvalue / Rvalue reference
  *
- *  let CodeBlocks supported C++11:download the last TDM-GCC，note that check out the option for compalier for support C++11.
+ *  let CodeBlocks supporting C++11:download the last TDM-GCC，note that check out the option for compalier for support C++11.
  */
 
  #include <iostream>
@@ -14,7 +14,7 @@
  }
 
 
- int main90()
+ int main()
  {
      // 普通引用
      int a=1;

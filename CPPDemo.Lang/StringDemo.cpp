@@ -23,15 +23,14 @@ void testString()
     }
 
     // for 迭代 (C++ 11)
-    /*
-    for(std::string s : str0) // auto s& 若使用引用类型，则可直接修改字符串。
+    for(auto s : str0) // auto s& 若使用引用类型，则可直接修改字符串。
     {
         std::cout << s << std::endl;
     }
-    */
+
 }
 
-int main8()
+int main_StringDemo()
 {
     testString();
     return 0;

@@ -1,0 +1,7 @@
+/*
+ *  std::copy
+ *
+ *  alogrithm
+ */
+
+

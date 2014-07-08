@@ -1,8 +1,8 @@
 /*
- *   赋值操作符
+ *   赋值操作符 copy assignment operator
  *
  *   属于复制控制
- *   默认情况下会生成一个，表示对对象的内存拷贝——即，值类型在Statck上复制（隐含的意思是，指针成员指向Heap中的同一个对象）。
+ *   默认情况下会生成一个，浅克隆。
  *
  */
 
@@ -15,18 +15,22 @@ public:
     int a=0;
 
 public:
-    Z(){}
+    Z():a(1)
+    {
+        cout << "->ctor default" << endl;
+    }
 
-    Z&/*也可以是void，只是不支持a=b=c*/ operator =(const Z& _z)
+    Z& operator =(const Z& _z)
     {
         cout << "-> operator = ()" << endl;
+
         if(this==&_z) // 如果是自身，立即返回
         {
             cout << "copy your self" << endl;
             return *this;
         }
 
-        this->a=_z.a+1; //复制时，a++
+        this->a=_z.a;
         return *this;
     }
 
@@ -43,7 +47,7 @@ public:
 };
 
 
-int main20()
+int main32()
 {
     Z z;
     Z zz;
@@ -56,7 +60,7 @@ int main20()
     */
 
     cout << &z << "," << & zz << endl; // 0x28fefc,0x28fef8
-    cout << z.a << "," << zz.a << endl; // 1,2
+    cout << z.a << "," << zz.a << endl;
 
     return 0;
 }

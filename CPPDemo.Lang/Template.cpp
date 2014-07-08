@@ -1,7 +1,6 @@
 /*
-*   Template
-*
-*/
+ *   Template
+ */
 
 
 #include <iostream>

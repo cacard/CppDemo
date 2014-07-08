@@ -1,9 +1,6 @@
-/**
-* 类中的 this / *this / 引用
-*
-* @author licunqing
-*
-*/
+/*
+ * this / *this / 引用
+ */
 
 #include <iostream>
 using namespace std;

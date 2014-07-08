@@ -96,7 +96,7 @@ Person81& ReturnLocalReference()
     return p;
 }
 
-int main()
+int main81()
 {
     Person81 p = ReturnLocalObject();
     cout << &p << "," << p.age << endl;
