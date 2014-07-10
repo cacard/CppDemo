@@ -1,6 +1,12 @@
 /*
- *   赋值操作符 copy assignment operator
+ *   拷贝赋值操作符： copy assignment operator
  *
+ *  注1：赋值操作符并不是“构造函数”
+ *  注2：名称中的“copy”意味着与拷贝相关，此操作必定调用拷贝构造函数。
+ *
+ *  why?
+
+ *  how?
  *   属于复制控制
  *   默认情况下会生成一个，浅克隆。
  *
@@ -20,6 +26,11 @@ public:
         cout << "->ctor default" << endl;
     }
 
+    // 赋值运算符重载
+    //  如果参数是(const Z _z)会发生什么？
+    //      会在调用该函数时发生一次没有必要的对象拷贝（即调用了 copy ctor）。
+    //  如果返回值是Z而不是Z&会发生什么？
+    //      会发生一次对象拷贝。
     Z& operator =(const Z& _z)
     {
         cout << "-> operator = ()" << endl;
@@ -47,7 +58,7 @@ public:
 };
 
 
-int main32()
+int main()
 {
     Z z;
     Z zz;
