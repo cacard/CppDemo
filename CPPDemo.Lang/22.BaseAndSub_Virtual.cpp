@@ -27,6 +27,11 @@ public:
     {
         cout << "Hello from base" << endl;
     }
+
+    void HelloNoVirtual()
+    {
+        cout << "Hello from base,NoVirtual" << endl;
+    }
 };
 
 class Sub : public Base
@@ -42,25 +47,22 @@ public:
         cout << "Sub's ~" << endl;
     }
 
-    virtual void Hello()
+    virtual void Hello() override // C++11 可添加上此关键字
     {
         cout << "Hello from sub" << endl;
+    }
+
+    void HelloNoVirtual()
+    {
+        cout << "Hello from sub,NoVirtual" << endl;
     }
 };
 
 
-int main_3()
+int main()
 {
-    Base * base = new Sub();
-    base->Base::Hello();
-
-    cout << "--------" << endl;
-
-    Base base2;
-    Sub sub2; // 先调用 base's ctor，再调用自己的ctor
-
-    base2=sub2;
-    base2.Hello();
+    Sub sub;
+    ((Base)sub).HelloNoVirtual();
 
     return 0;
 }
