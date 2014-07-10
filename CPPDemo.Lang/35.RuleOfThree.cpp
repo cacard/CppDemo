@@ -68,6 +68,8 @@ public:
         len=other.len;
         data=new int[len];
         std::copy(other.data/*first element*/,other.data+other.len/*last element*/,data/* dest */);
+
+        return *this;
     }
 
     ~Resource() // 3 Îö¹¹

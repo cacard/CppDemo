@@ -1,5 +1,5 @@
 /*
- *  移动构造函数 move assignment ctor
+ *  移动构造函数： move ctor
  *
  *  why?
  *  C++语言是 value semantic 的。对象拷贝发生在很多情况下，特别是一些临时量中（比如函数返回局部变量对象），这种拷贝影响性能且不必要。
@@ -12,24 +12,24 @@
  #include <iostream>
  using namespace std;
 
- class Class310
+ class Resource
  {
      int age;
 
 public:
-    Class310()
+    Resource()
         :age(1)
     {
         cout << "-> ctor default" << endl;
     }
 
-    Class310(const Class310& that)
+    Resource(const Resource& that)
     {
         cout << "-> copy ctor" << endl;
         age = that.age;
     }
 
-    Class310(const Class310&& that) // 移动构造函数
+    Resource(const Resource&& that) // 移动构造函数
     {
         cout << "-> move ctor" << endl;
     }
@@ -37,8 +37,8 @@ public:
 
  int main310()
  {
-    Class310 c1;
-    Class310 c2(std::move(c1)); // 把c1通过move()变成一个右值引用，通过移动构造函数赋值给c2
+    Resource c1;
+    Resource c2(std::move(c1)); // 把c1通过move()变成一个右值引用，通过移动构造函数赋值给c2
 
     return 0;
  }

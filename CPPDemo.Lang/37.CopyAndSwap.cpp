@@ -1,5 +1,14 @@
 /*
  *  TODO Copy and Swap 习语
+ *
+ *  why?
+ *      在自己实现拷贝赋值操作符的时候（自己分配内存、赋值、释放旧资源），有一些问题，比如假若分配内存过程中出现了异常，那么旧对象的状态发生了改变。且代码十分臃肿。
+ *      通过std::swap来自定义一个swap()，可避免上述问题。
+ *
+ *  how?
+ *
+ *
+ *  @see http://stackoverflow.com/questions/3279543/what-is-the-copy-and-swap-idiom
  */
 
 #include <iostream>
