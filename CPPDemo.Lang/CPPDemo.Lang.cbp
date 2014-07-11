@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CPPDemo.Lang" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/CPPDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/CPPDemo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="02.LRvalueAndRvalueReference.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="20.ClassBasic.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="21.BaseAndSub.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="21.ClassWithPointer.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="22.BaseAndSub_Virtual.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="23.FriendClassAndFriendMethod.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="30.CtorExplicit.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="300.CtorInvokeCtor.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="310.CopyCtor.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="311.CopyAssignmentOperator.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="312.CopyAssignmentOperatorUsingSwap.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="320.MoveCtor.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="321.MoveAssignmentOperator.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="350.RuleOfFive_Simple.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="351.RuleOfFive_Optimize.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="81.MethodReturnValueAndRef.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="82.SmartPointer.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="83.NewAndDelete.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="ConstExpr.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="ExceptionDemo.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="FunctorAndLambda.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="MyClass.hpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="MyResource.h">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Overload.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="StringDemo.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="Template.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="ThisAndRefDemo.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="algorithm.Copy.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="cstring.strcpy_memcpy_memset.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

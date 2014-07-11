@@ -1,5 +1,5 @@
 /*
- *  Rule of Three
+ *  Rule of Five 普通版
  *
  *  why need?
  *  Q:何时需要自定义析构函数或者复制、赋值函数？
@@ -7,8 +7,9 @@
  *
  *  how?
  *  一般需要同时自定义实现 dtor / copy ctor / copy assignment operator
- *  C++11增加了move语义，变成了 Rule of Five，即还需要实现 move ctor / move assignment operator。
  *
+ *  Rule of Five
+ *  C++11增加了move语义，变成了 Rule of Five，即还需要实现 move ctor / move assignment operator。
  *
  */
 
@@ -35,7 +36,8 @@ public:
         cout<<"ctor(int)"<<endl;
     }
 
-    Resource(const Resource& other) // #1 拷贝构造函数
+    // #1 拷贝构造函数
+    Resource(const Resource& other)
         :data(new int[other.len]),len(other.len)
     {
         cout<<"copy ctor(T&)"<<endl;
@@ -47,7 +49,8 @@ public:
 
     }
 
-    Resource& operator = (const Resource& other) // #2 赋值运算符重载
+    // #2 赋值运算符重载
+    Resource& operator = (const Resource& other)
     {
         cout<<"operator=()"<<endl;
         // 如果是自身赋值给自身，立即返回
@@ -71,7 +74,8 @@ public:
         return *this;
     }
 
-    ~Resource() // 3 析构
+    // #3 dtor
+    ~Resource()
     {
         cout<<"~T()"<<endl;
         if(data!=NULL)
@@ -80,6 +84,36 @@ public:
         }
 
         len=0;
+    }
+
+    // #4 移动构造函数
+    Resource(Resource&& other)
+    {
+        len=other.len;
+        data=other.data;
+
+        other.len=0;
+        other.data=NULL;
+    }
+
+    // #5 移动赋值运算符
+    Resource& operator = (Resource&& other)
+    {
+        if(this == &other)
+        {
+            return *this;
+        }
+
+        len=0;
+        delete[] data;
+
+        len=other.len;
+        data=other.data;
+
+        other.len=0;
+        other.data=NULL;
+
+        return *this;
     }
  };
 

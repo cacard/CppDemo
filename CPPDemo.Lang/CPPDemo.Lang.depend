@@ -1,0 +1,144 @@
+# depslib dependency file v1.0
+1404718761 source:e:\git\cppdemo\cppdemo.lang\classdemo.cpp
+	<iostream>
+	<stdio.h>
+
+1404783985 source:e:\git\cppdemo\cppdemo.lang\thisandrefdemo.cpp
+	<iostream>
+
+1404712328 source:e:\git\cppdemo\cppdemo.lang\baseandsub.cpp
+	<iostream>
+
+1404718761 source:e:\git\cppdemo\cppdemo.lang\copyctor.cpp
+	<iostream>
+
+1404718761 source:e:\git\cppdemo\cppdemo.lang\copyoperator.cpp
+	<iostream>
+
+1404718761 source:e:\git\cppdemo\cppdemo.lang\friendclassandfriendmethod.cpp
+
+1404718761 source:e:\git\cppdemo\cppdemo.lang\baseandsub_virtual.cpp
+	<iostream>
+
+1404718761 source:e:\git\cppdemo\cppdemo.lang\exceptiondemo.cpp
+	<iostream>
+
+1404784016 source:e:\git\cppdemo\cppdemo.lang\template.cpp
+	<iostream>
+
+1404718761 source:e:\git\cppdemo\cppdemo.lang\overload.cpp
+	<iostream>
+
+1404784449 source:e:\git\cppdemo\cppdemo.lang\stringdemo.cpp
+	<iostream>
+
+1404355310 source:e:\git\cppdemo\cppdemo.lang\constexpr.cpp
+
+1404718761 source:e:\git\cppdemo\cppdemo.lang\ctorinvokector.cpp
+	<iostream>
+
+1404718761 source:e:\git\cppdemo\cppdemo.lang\ctorexplicit.cpp
+	<iostream>
+
+1404718761 source:e:\git\cppdemo\cppdemo.lang\ruleofthree.cpp
+	<iostream>
+	<cstring>
+	<stdio.h>
+
+1404712382 source:e:\git\cppdemo\cppdemo.lang\classwithpointer.cpp
+	<iostream>
+	<stdio.h>
+
+1404784470 source:e:\git\cppdemo\cppdemo.lang\lrvalueandrvaluereference.cpp
+	<iostream>
+
+1404716359 source:e:\git\cppdemo\cppdemo.lang\movesemantics.cpp
+	<iostream>
+	<cstring>
+
+1404717472 source:e:\git\cppdemo\cppdemo.lang\81.movesemantics.cpp
+	<iostream>
+	<cstring>
+
+1404781640 source:e:\git\cppdemo\cppdemo.lang\81.methodreturnvalueandref.cpp
+	<iostream>
+	<cstring>
+
+1404718597 source:e:\git\cppdemo\cppdemo.lang\82.movesemantics.cpp
+
+1404781624 source:e:\git\cppdemo\cppdemo.lang\33.copyandswap.cpp
+	<iostream>
+
+1404784102 source:e:\git\cppdemo\cppdemo.lang\20.classbasic.cpp
+	<iostream>
+	<stdio.h>
+
+1404790650 source:e:\git\cppdemo\cppdemo.lang\31.copyctor.cpp
+	<iostream>
+	<vector>
+
+1404796298 source:e:\git\cppdemo\cppdemo.lang\32.copyoperator.cpp
+	<iostream>
+
+1404783084 source:e:\git\cppdemo\cppdemo.lang\37.copyandswap.cpp
+	<iostream>
+
+1404783738 source:e:\git\cppdemo\cppdemo.lang\35.ruleofthree.cpp
+	<iostream>
+	<cstring>
+	<stdio.h>
+
+1404712328 source:e:\git\cppdemo\cppdemo.lang\21.baseandsub.cpp
+	<iostream>
+
+1404888761 source:e:\git\cppdemo\cppdemo.lang\22.baseandsub_virtual.cpp
+	<iostream>
+
+1404718761 source:e:\git\cppdemo\cppdemo.lang\30.ctorexplicit.cpp
+	<iostream>
+
+1404718761 source:e:\git\cppdemo\cppdemo.lang\300.ctorinvokector.cpp
+	<iostream>
+
+1404801256 source:e:\git\cppdemo\cppdemo.lang\02.lrvalueandrvaluereference.cpp
+	<iostream>
+
+1404712382 source:e:\git\cppdemo\cppdemo.lang\21.classwithpointer.cpp
+	<iostream>
+	<stdio.h>
+
+1404797030 source:e:\git\cppdemo\cppdemo.lang\310.movector.cpp
+	<iostream>
+
+1404796298 source:e:\git\cppdemo\cppdemo.lang\32.copyassignmentoperator.cpp
+	<iostream>
+
+1404798756 source:e:\git\cppdemo\cppdemo.lang\algorithm.copy.cpp
+
+1404798994 source:e:\git\cppdemo\cppdemo.lang\cstring.strcpy_memcpy_memset.cpp
+	<cstring>
+	<iostream>
+
+1404871969 source:e:\git\cppdemo\cppdemo.lang\smartpointer.cpp
+	<iostream>
+	<memory>
+
+1404873366 source:e:\git\cppdemo\cppdemo.lang\200.myclass.cpp
+	<iostream>
+
+1404873366 source:e:\git\cppdemo\cppdemo.lang\200.myclass.hpp
+	<iostream>
+
+1404874060 source:e:\git\cppdemo\cppdemo.lang\83.newanddelete.cpp
+	<iostream>
+	"myclass1.hpp"
+
+1404873366 e:\git\cppdemo\cppdemo.lang\myclass.hpp
+	<iostream>
+
+1404873366 source:e:\git\cppdemo\cppdemo.lang\myclass.hpp
+	<iostream>
+
+1404874045 e:\git\cppdemo\cppdemo.lang\myclass1.hpp
+	<iostream>
+
