@@ -9,7 +9,6 @@
  *  一般需要同时自定义实现 dtor / copy ctor / copy assignment operator
  *  C++11增加了move语义，变成了 Rule of Five，即还需要实现 move ctor / move assignment operator。
  *
- *  相关移步到RuleOfFive的具体实现。
  *
  */
 

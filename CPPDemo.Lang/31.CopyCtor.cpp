@@ -8,6 +8,9 @@
  *
  *  how?
  *      默认浅克隆。
+ *      自定义实现：
+ *          - 值类型直接复制
+ *          - 指针类型，先分配内存，再拷贝。
  *
  *  发生场景：
  *      #1、#2、#3、#4、#5
@@ -18,43 +21,50 @@
 #include <vector>
 using namespace std;
 
-class Y
+class Resource
 {
-public:
-    int a=0;
-    int b=0;
+private:
+    size_t len;
+    int* data;
 
 public:
-    Y(){}
+    Resource()
+        :len(0),data(new int[0])
+    {}
 
     // 拷贝构造函数
     // 假若这里的参数是(const Y y)会发生什么情况？当拷贝发生时，需要调用拷贝构造函数，而这个函数本身又发生一次拷贝。于是又调用拷贝构造函数！
-    Y(const Y& y)
+    Resource(const Resource& other)
+        :len(other.len),data(new int[other.len])
     {
-        cout << "-> invoked copy ctor" << endl;
-        this->a=y.a+1;
-        this->b=y.b+1;
+        cout << "-> copy ctor" << endl;
+        std::copy(other.data/*first element*/,other.data+other.len/*last element*/,data/* dest */);
+    }
+
+    ~Resource()
+    {
+        if(data!=NULL){delete[] data;}
+        len=0;
     }
 };
 
 //  #1 显示调用复制构造函数时
 void happens1()
 {
-    Y y1;
-    Y y2(y1);
+    Resource y1;
+    Resource y2(y1);
 }
 
 //  #2 值传递的方式传递对象时，发生对象复制
-void happens2(Y y)
+void happens2(Resource y)
 {
-
 }
 
 //  #3 方法返回对象后，发生临时变量拷贝。注：编译器可能优化，不让其发生
-Y happens3()
+Resource happens3()
 {
-    Y y1;
-    Y y2;
+    Resource y1;
+    Resource y2;
     bool b;
     return b?y1:y2;
 }
@@ -62,22 +72,25 @@ Y happens3()
 //  #4 使用{}初始化列表时
 void happens4()
 {
-    Y y1;
-    Y y2;
-    Y yArray[2] = {y1,y2};
+    Resource y1;
+    Resource y2;
+    Resource yArray[2] = {y1,y2};
 }
 
 //  #5 某些类型的方法会发生复制
 void happens5()
 {
-    Y y1;
-    vector<Y> v;
+    Resource y1;
+    vector<Resource> v;
     v.push_back(y1);
 }
 
 int main()
 {
-    happens4();
+    Resource r1;
+    happens2(r1);
+
+    return 0;
 }
 
 
