@@ -81,6 +81,8 @@
 			<Option target="Debug" />
 		</Unit>
 		<Unit filename="312.CopyAssignmentOperatorUsingSwap.cpp">
+			<Option compile="0" />
+			<Option link="0" />
 			<Option target="Debug" />
 		</Unit>
 		<Unit filename="320.MoveCtor.cpp">
@@ -116,6 +118,25 @@
 			<Option compile="0" />
 			<Option link="0" />
 			<Option target="Debug" />
+		</Unit>
+		<Unit filename="900.thread.demo.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="900.thread.parameters.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="901.thread.join_detach.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="902.thread.exception.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="905.thread.this_thread.cpp">
+			<Option compile="0" />
+			<Option link="0" />
 		</Unit>
 		<Unit filename="ConstExpr.cpp">
 			<Option compile="0" />
