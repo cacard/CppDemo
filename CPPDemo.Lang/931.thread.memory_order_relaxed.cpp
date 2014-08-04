@@ -1,6 +1,7 @@
 //
 //      memory_order_relaxed
 //
+//      - reorder鏄厑璁哥殑
 //
 
 #include <iostream>
@@ -12,7 +13,7 @@ using namespace std;
 
 atomic<int> x,y;
 
-/* relaxed模式下，sotre|store可能发生reorder */
+/* sotre|store鍙兘鍙戠敓reorder */
 void f_store_store()
 {
     x.store(1,memory_order_relaxed);
@@ -23,7 +24,7 @@ void f_is_y_before_x()
 {
     while(y.load(memory_order_relaxed)!=2){cout<<"waiting"<<endl;}
     if(x.load(memory_order_relaxed)==0){
-        cout << "catch" << endl; // 可能发生，即y.store可能先于x.store
+        cout << "catch" << endl; // 鍙兘鍙戠敓锛屽嵆y.store鍙兘鍏堜簬x.store
     }
 }
 
