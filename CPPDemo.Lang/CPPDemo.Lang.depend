@@ -161,3 +161,14 @@
 	<mutex>
 	<map>
 
+1407113409 source:e:\git\cppdemo\cppdemo.lang\930.thread.memory_order_seq_cst.cpp
+	<iostream>
+	<atomic>
+	<thread>
+
+1407116465 source:e:\git\cppdemo\cppdemo.lang\931.thread.memory_order_relaxed.cpp
+	<iostream>
+	<thread>
+	<atomic>
+	<assert.h>
+
