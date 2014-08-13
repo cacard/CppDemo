@@ -148,21 +148,46 @@
 		<Unit filename="910.thread.mutex.lock_guard.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+<<<<<<< HEAD
 			<Option target="Debug" />
+=======
+>>>>>>> origin/master
 		</Unit>
 		<Unit filename="911.[todo].thread.unique_lock.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+<<<<<<< HEAD
 			<Option target="Debug" />
+=======
+>>>>>>> origin/master
 		</Unit>
 		<Unit filename="920.thread.atomic.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+<<<<<<< HEAD
 			<Option target="Debug" />
 		</Unit>
 		<Unit filename="925.thread.atomic_flag.cpp">
 			<Option target="Debug" />
 		</Unit>
+=======
+		</Unit>
+		<Unit filename="925.thread.atomic_flag.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="930.thread.memory_order_seq_cst.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="931.thread.memory_order_relaxed.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="932.thread.memory_order_acquire_release.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+>>>>>>> origin/master
 		<Unit filename="ConstExpr.cpp">
 			<Option compile="0" />
 			<Option link="0" />
