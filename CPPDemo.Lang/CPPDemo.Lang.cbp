@@ -124,6 +124,8 @@
 			<Option link="0" />
 		</Unit>
 		<Unit filename="900.thread.parameters.cpp">
+			<Option compile="0" />
+			<Option link="0" />
 			<Option target="Debug" />
 		</Unit>
 		<Unit filename="901.thread.join_detach.cpp">
@@ -134,9 +136,32 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="903.thread.transfer_owner.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="905.thread.this_thread.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+		</Unit>
+		<Unit filename="910.thread.mutex.lock_guard.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="911.[todo].thread.unique_lock.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="920.thread.atomic.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="925.thread.atomic_flag.cpp">
+			<Option target="Debug" />
 		</Unit>
 		<Unit filename="ConstExpr.cpp">
 			<Option compile="0" />
