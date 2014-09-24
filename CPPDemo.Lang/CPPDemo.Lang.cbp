@@ -32,35 +32,44 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="02.LRvalueAndRvalueReference.cpp">
+		<Unit filename="002.LRvalueAndRvalueReference.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 			<Option target="Debug" />
 		</Unit>
-		<Unit filename="20.ClassBasic.cpp">
+		<Unit filename="200.ClassBasic.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="21.BaseAndSub.cpp">
+		<Unit filename="201.BaseAndSub.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="21.ClassWithPointer.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="22.BaseAndSub_Virtual.cpp">
+		<Unit filename="201.ClassWithPointer.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 			<Option target="Debug" />
 		</Unit>
-		<Unit filename="23.FriendClassAndFriendMethod.cpp">
+		<Unit filename="202.Virtual.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 			<Option target="Debug" />
 		</Unit>
-		<Unit filename="30.CtorExplicit.cpp">
+		<Unit filename="203.PureVirtual.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="204.VirtualAndInvokeOrder.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="205.VirtualDtor.cpp" />
+		<Unit filename="210.FriendClassAndFriendMethod.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="300.CtorExplicit.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 			<Option target="Debug" />
@@ -104,17 +113,17 @@
 			<Option link="0" />
 			<Option target="Debug" />
 		</Unit>
-		<Unit filename="81.MethodReturnValueAndRef.cpp">
+		<Unit filename="801.MethodReturnValueAndRef.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 			<Option target="Debug" />
 		</Unit>
-		<Unit filename="82.SmartPointer.cpp">
+		<Unit filename="802.SmartPointer.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 			<Option target="Debug" />
 		</Unit>
-		<Unit filename="83.NewAndDelete.cpp">
+		<Unit filename="803.NewAndDelete.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 			<Option target="Debug" />
@@ -148,101 +157,28 @@
 		<Unit filename="910.thread.mutex.lock_guard.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-<<<<<<< HEAD
-			<Option target="Debug" />
-=======
->>>>>>> origin/master
 		</Unit>
 		<Unit filename="911.[todo].thread.unique_lock.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-<<<<<<< HEAD
-			<Option target="Debug" />
-=======
->>>>>>> origin/master
 		</Unit>
 		<Unit filename="920.thread.atomic.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-<<<<<<< HEAD
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="925.thread.atomic_flag.cpp">
-			<Option target="Debug" />
-		</Unit>
-=======
 		</Unit>
 		<Unit filename="925.thread.atomic_flag.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option target="Debug" />
 		</Unit>
-		<Unit filename="930.thread.memory_order_seq_cst.cpp">
+		<Unit filename="STL.01.Bitset.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="931.thread.memory_order_relaxed.cpp">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="932.thread.memory_order_acquire_release.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
->>>>>>> origin/master
-		<Unit filename="ConstExpr.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="ExceptionDemo.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="FunctorAndLambda.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="MyClass.hpp">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="MyResource.h">
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="Overload.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="StringDemo.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="Template.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="ThisAndRefDemo.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-		</Unit>
-		<Unit filename="algorithm.Copy.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="cstring.strcpy_memcpy_memset.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
-			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
