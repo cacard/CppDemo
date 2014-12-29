@@ -1,7 +1,7 @@
 ﻿/*
- *  Lvalue / Rvalue / Rvalue reference
+ *  左值Lvalue / 右值Rvalue / 右值引用RvalueReference
  *
- *  let CodeBlocks supporting C++11:download the last TDM-GCC，note that check out the option for compalier for support C++11.
+ *  Let CodeBlocks supporting C++11:download the last TDM-GCC，note that check out the option for compalier for support C++11.
  */
 
  #include <iostream>
