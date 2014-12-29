@@ -32,77 +32,97 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="002.LRvalueAndRvalueReference.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="200.ClassBasic.cpp">
+		<Unit filename="001.Lang.LRvalueAndRvalueReference.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="201.BaseAndSub.cpp">
+		<Unit filename="001.Lang.StringDemo.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="201.ClassWithPointer.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="202.Virtual.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="Debug" />
-		</Unit>
-		<Unit filename="203.PureVirtual.cpp">
+		<Unit filename="005.Lang.bitfield.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="204.VirtualAndInvokeOrder.cpp">
+		<Unit filename="010.Lang.Overload.cpp">
+			<Option compile="0" />
+		</Unit>
+		<Unit filename="010.Lang.ThisAndRefDemo.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="020.Lang.ConstExpr.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
-		<Unit filename="205.VirtualDtor.cpp" />
+		<Unit filename="050.Lang.ExceptionDemo.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="070.Lang.FunctorAndLambda.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="200.Class.ClassBasic.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="201.Class.BaseAndSub.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="201.Class.ClassWithPointer.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="202.Class.Virtual.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="203.Class.PureVirtual.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="204.Class.VirtualAndInvokeOrder.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="205.Class.VirtualDtor.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="210.FriendClassAndFriendMethod.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="300.CtorExplicit.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="300.CtorInvokeCtor.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="310.CopyCtor.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="311.CopyAssignmentOperator.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="312.CopyAssignmentOperatorUsingSwap.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="320.MoveCtor.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="321.MoveAssignmentOperator.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="350.RuleOfFive_Simple.cpp">
 			<Option compile="0" />
@@ -111,22 +131,27 @@
 		<Unit filename="351.RuleOfFive_Optimize.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
+		</Unit>
+		<Unit filename="36.RuleOfFive.cpp">
+			<Option compile="0" />
+		</Unit>
+		<Unit filename="37.CopyAndSwap.cpp">
+			<Option compile="0" />
 		</Unit>
 		<Unit filename="801.MethodReturnValueAndRef.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="802.SmartPointer.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="803.NewAndDelete.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
+		</Unit>
+		<Unit filename="82.MoveSemantics.cpp">
+			<Option compile="0" />
 		</Unit>
 		<Unit filename="900.thread.demo.cpp">
 			<Option compile="0" />
@@ -135,7 +160,6 @@
 		<Unit filename="900.thread.parameters.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="901.thread.join_detach.cpp">
 			<Option compile="0" />
@@ -148,7 +172,6 @@
 		<Unit filename="903.thread.transfer_owner.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
 		<Unit filename="905.thread.this_thread.cpp">
 			<Option compile="0" />
@@ -169,9 +192,29 @@
 		<Unit filename="925.thread.atomic_flag.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-			<Option target="Debug" />
 		</Unit>
-		<Unit filename="STL.01.Bitset.cpp">
+		<Unit filename="930.thread.memory_order_seq_cst.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="931.thread.memory_order_relaxed.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="932.thread.memory_order_acquire_release.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="Template.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="algorithm.Copy.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
+		<Unit filename="cstring.strcpy_memcpy_memset.cpp">
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
