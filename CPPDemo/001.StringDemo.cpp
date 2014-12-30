@@ -1,6 +1,5 @@
 /*
- *  string
- *
+ *  C++ string demo
  */
 
 #include <iostream>
@@ -11,13 +10,13 @@ void testString()
     std::string str1 = "abc"; // 拷贝初始化
 
     // 索引迭代
-    for(int i=0;i<str0.length();i++)
+    for(int i=0; i<str0.length(); i++)
     {
         std::cout << str0[i] << std::endl;
     }
 
     // 迭代器迭代
-    for(std::string::iterator iter = str0.begin();iter!=str0.end();iter++)
+    for(std::string::iterator iter = str0.begin(); iter!=str0.end(); iter++)
     {
         std::cout << *iter << std::endl;
     }
@@ -30,7 +29,7 @@ void testString()
 
 }
 
-int main_StringDemo()
+int main()
 {
     testString();
     return 0;

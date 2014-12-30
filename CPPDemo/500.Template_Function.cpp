@@ -1,23 +1,23 @@
 /*
- *   Template
+ *   Template Function
  */
 
 
 #include <iostream>
 using namespace std;
 
-// Method Template
+// Function(Method) Template
 template <typename T>
-int Max(const T x,const T y)
+int Max(const T x, const T y)
 {
-    if(x>=y)
+    if(x >= y)
     {
         return x;
     }
     return y;
 }
 
-int main_5()
+int main()
 {
     int result = Max(1,2);
     cout << result << endl;

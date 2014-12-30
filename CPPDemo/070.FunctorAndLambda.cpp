@@ -2,8 +2,9 @@
  *  Functor 函数对象
  *  - 可像调用函数一样操作 Functor 对象。
  *
- *  Lambda
+ *  ***
  *
+ *  Lambda
  *  值捕获和引用捕获。
  */
 

@@ -1,26 +1,27 @@
 ﻿/*
  *  左值Lvalue / 右值Rvalue / 右值引用RvalueReference
  *
- *  Let CodeBlocks supporting C++11:download the last TDM-GCC，note that check out the option for compalier for support C++11.
+ *  Let CodeBlocks supporting C++11:download the last TDM-GCC，
+ *  note that check out the option for compalier for support C++11.
  */
 
  #include <iostream>
  using namespace std;
 
+ // 返回右值
  int MethodReturnRValue()
  {
      int temp = 10;
      return temp;
  }
 
-
  int main()
  {
      // 普通引用
-     int a=1;
+     int a = 1;
      int& ra = a; // ra 是 a 的引用，取地址是相同的
      cout << "a's address:" << &a << ", and ra's address:" << &ra << endl;
-     ra=2;
+     ra = 2;
      cout << a << endl;
 
      // const 引用
@@ -36,7 +37,7 @@
 
      // 右值引用
      cout << "rvalue reference:" << endl;
-     int &&rr1 = 1;
+     int&& rr1 = 1;
      cout << rr1 << endl;
      int&& rr2 = MethodReturnRValue();
      cout << rr2 << endl;

@@ -1,5 +1,5 @@
 //
-//      bitfield
+//  bitfield
 //
 
 #include <iostream>

@@ -2,9 +2,10 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="CPPDemo.Lang" />
+		<Option title="CPPDemo" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="Lang\;Class\;Thread\;Memory\;Algorithm\;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/CPPDemo" prefix_auto="1" extension_auto="1" />
@@ -32,187 +33,236 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="001.Lang.LRvalueAndRvalueReference.cpp">
+		<Unit filename="001.LRvalue_Rvalue_RvalueReference.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Lang/" />
 		</Unit>
-		<Unit filename="001.Lang.StringDemo.cpp">
+		<Unit filename="001.StringDemo.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Lang/" />
 		</Unit>
-		<Unit filename="005.Lang.bitfield.cpp">
+		<Unit filename="005.bitfield.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Lang/" />
 		</Unit>
-		<Unit filename="010.Lang.Overload.cpp">
-			<Option compile="0" />
-		</Unit>
-		<Unit filename="010.Lang.ThisAndRefDemo.cpp">
+		<Unit filename="010.Overload.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Lang/" />
+		</Unit>
+		<Unit filename="010.ThisAndRefDemo.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="Class/" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="020.Lang.ConstExpr.cpp">
+		<Unit filename="020.ConstExpr.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Lang/" />
 		</Unit>
-		<Unit filename="050.Lang.ExceptionDemo.cpp">
+		<Unit filename="050.ExceptionDemo.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Lang/" />
 		</Unit>
-		<Unit filename="070.Lang.FunctorAndLambda.cpp">
+		<Unit filename="070.FunctorAndLambda.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="200.Class.ClassBasic.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="201.Class.BaseAndSub.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="201.Class.ClassWithPointer.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="202.Class.Virtual.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="203.Class.PureVirtual.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="204.Class.VirtualAndInvokeOrder.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="205.Class.VirtualDtor.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="210.FriendClassAndFriendMethod.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="300.CtorExplicit.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="300.CtorInvokeCtor.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="310.CopyCtor.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="311.CopyAssignmentOperator.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="312.CopyAssignmentOperatorUsingSwap.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="320.MoveCtor.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="321.MoveAssignmentOperator.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="350.RuleOfFive_Simple.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="351.RuleOfFive_Optimize.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="36.RuleOfFive.cpp">
 			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="37.CopyAndSwap.cpp">
 			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="Class/" />
+		</Unit>
+		<Unit filename="500.Template_Function.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option virtualFolder="Lang/" />
+			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="801.MethodReturnValueAndRef.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Class/" />
 		</Unit>
 		<Unit filename="802.SmartPointer.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Memory/" />
 		</Unit>
 		<Unit filename="803.NewAndDelete.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Memory/" />
 		</Unit>
 		<Unit filename="82.MoveSemantics.cpp">
 			<Option compile="0" />
+			<Option link="0" />
 		</Unit>
 		<Unit filename="900.thread.demo.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="900.thread.parameters.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="901.thread.join_detach.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="902.thread.exception.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="903.thread.transfer_owner.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="905.thread.this_thread.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="910.thread.mutex.lock_guard.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="911.[todo].thread.unique_lock.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="920.thread.atomic.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="925.thread.atomic_flag.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="930.thread.memory_order_seq_cst.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="931.thread.memory_order_relaxed.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="932.thread.memory_order_acquire_release.cpp">
 			<Option compile="0" />
 			<Option link="0" />
-		</Unit>
-		<Unit filename="Template.cpp">
-			<Option compile="0" />
-			<Option link="0" />
-			<Option target="&lt;{~None~}&gt;" />
+			<Option virtualFolder="Thread/" />
 		</Unit>
 		<Unit filename="algorithm.Copy.cpp">
 			<Option compile="0" />
 			<Option link="0" />
+			<Option virtualFolder="Algorithm/" />
 		</Unit>
 		<Unit filename="cstring.strcpy_memcpy_memset.cpp">
 			<Option compile="0" />

@@ -2,7 +2,7 @@
  *  重载
  *
  *  注意const重载
- *      const可分为 top-level（指向对象本身）/low-level（指向对象的引用）。
+ *      const可分为 top-level（指向对象本身）/ low-level（指向对象的引用）。
  *
  */
 
@@ -26,7 +26,7 @@
  void Method4(Y& y){}
  void Method4(const Y& y){}
 
- int main11(int count,char * args[])
+ int main(int count, char * args[])
  {
      return 0;
  }

@@ -11,8 +11,8 @@
 #include <thread>
 using namespace std;
 
-int counter=0;
-const static int loopCount=1000000;
+int counter = 0;
+const static int loopCount = 1000000;
 
 // 普通函数供thread调用
 void thread_function()
@@ -32,38 +32,35 @@ public:
 
 void thread1()
 {
-        for(int i=0;i<loopCount;i++){ counter++;}
+        for(int i=0; i<loopCount; i++){ counter++; }
 }
 
 void thread2()
 {
-        for(int i=0;i<loopCount;i++){ counter++;}
+        for(int i=0; i<loopCount; i++){ counter++; }
 }
 
 int main()
 {
     // #1
-    thread t(thread_function);
-    t.join();
+    thread t1(thread_function);
+    t1.join();
 
     // #2
     MyClass m;
-    thread tt((MyClass())); // 或者 tt((MyClass())) or tt{MyClass()}
-    tt.join();
+    thread t2((MyClass())); // 或者 tt((MyClass())) or tt{MyClass()}
+    t2.join();
 
     // #2 lambda exp
-    thread ttt([](){cout<<"hello,running in lambda."<<endl;});
-    ttt.join();
-
-
-
+    thread t3([](){ cout<< "hello,running in lambda." << endl;});
+    t3.join();
 
 
     // interleave of two thread
-    thread t1(thread1);
-    thread t2(thread2);
-    t1.join();
-    t2.join();
+    thread t10(thread1);
+    thread t20(thread2);
+    t10.join();
+    t20.join();
     cout << "counter=" << counter << endl;
 
     return 0;
