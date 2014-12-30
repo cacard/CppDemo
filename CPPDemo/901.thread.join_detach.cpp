@@ -16,7 +16,7 @@ using namespace std;
 
 void f()
 {
-    std::thread::id id=std::this_thread::get_id();
+    std::thread::id id = std::this_thread::get_id();
     cout << "current thread's id:" << id << endl;
     std::this_thread::sleep_for(std::chrono::milliseconds(2000));
 }
