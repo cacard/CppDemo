@@ -49,6 +49,8 @@
 			<Option virtualFolder="Lang/" />
 		</Unit>
 		<Unit filename="008.ConstPointer.cpp">
+			<Option compile="0" />
+			<Option link="0" />
 			<Option virtualFolder="Lang/" />
 		</Unit>
 		<Unit filename="010.Overload.cpp">
@@ -261,6 +263,9 @@
 			<Option compile="0" />
 			<Option link="0" />
 			<Option virtualFolder="Thread/" />
+		</Unit>
+		<Unit filename="PlacementNew.cpp">
+			<Option virtualFolder="Memory/" />
 		</Unit>
 		<Unit filename="algorithm.Copy.cpp">
 			<Option compile="0" />
